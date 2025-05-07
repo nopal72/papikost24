@@ -6,8 +6,11 @@ if(!isset($id)){
 }
 $admin = query("SELECT * FROM tb_admin WHERE id_admin=$id");
 if(isset($_POST["submit"])){
+    var_dump($_POST);
     insertNewTagihan($_POST);
 }
+
+// ini adalah update terbaru
 
 ?>
 <!DOCTYPE html>
